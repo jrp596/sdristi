@@ -1,3 +1,173 @@
+<!-- Variable definitions -->
+<Variable name="keycolor" description="Main Color" type="color" default="#6060e7" value="#6060e7"/>
+
+<Group description="Theme Options" selector="body">
+    <Variable name="sidebar" description="Left Sidebar" type="length" default="0px" min="0px" max="1px" value="0px"/>
+    <Variable name="fixedmenu" description="Fixed Menu" type="length" default="1px" min="0px" max="1px" value="1px"/>
+    <Variable name="fixedsidebar" description="Fixed Sidebar" type="length" default="1px" min="0px" max="1px" value="1px"/>
+</Group>
+
+<Group description="Theme Widths" selector="body">
+    <Variable name="boxed" description="Boxed Layout" type="length" default="0px" min="0px" max="1px" value="0px"/>
+    <Variable name="row.width" description="Container Width" type="length" default="1068px" min="970px" max="1104px" value="1068px"/>
+    <Variable name="sidebar.width" description="Sidebar Width" type="length" default="300px" min="250px" max="336px" value="300px"/>
+</Group>
+
+<Group description="Theme Fonts" selector="body">
+    <Variable name="main.font" description="Site Font" type="font" family="'Raleway',Arial,sans-serif" default="normal 400 14px $(family)"  value="normal 400 14px $(family)"/>
+    <Variable name="menu.font" description="Menu Font" type="font" family="'Raleway',Arial,sans-serif" default="normal 400 14px $(family)"  value="normal 400 14px $(family)"/>
+    <Variable name="title.font" description="Title Font" type="font" family="'Raleway',Arial,sans-serif" default="normal 400 14px $(family)"  value="normal 400 14px $(family)"/>
+    <Variable name="meta.font" description="Meta Font" type="font" family="'Raleway',Arial,sans-serif" default="normal 400 14px $(family)"  value="normal 400 14px $(family)"/>
+    <Variable name="text.font" description="Text Font" type="font" family="'Raleway',Arial,sans-serif" default="normal 400 14px $(family)"  value="normal 400 14px $(family)"/>
+</Group>
+
+<Group description="Background" selector="body">
+    <Variable name="body.background.color" description="Body Background" type="color" default="#f5f6f7"  value="#f5f6f7"/>
+    <Variable name="body.background" description="Background" type="background" color="$(body.background.color)" default="$(color) none no-repeat scroll center center" value="$(color) none no-repeat scroll center center"/>
+    <Variable name="outer.bg" description="Outer Wrapper Background" type="color" default="#ffffff"  value="#ffffff"/>
+    <Variable name="background.cover" description="Background Image Size Cover" type="length" default="0px" min="0px" max="1px" value="0px"/>
+</Group>
+
+<Group description="Theme Colors" selector="body">
+    <Variable name="main.color" description="Theme Color" type="color" default="#6060e7" value="#6060e7"/>
+    <Variable name="title.color" description="Title Color" type="color" default="#171c24" value="#171c24"/>
+    <Variable name="title.hover.color" description="Title Hover Color" type="color" default="$(main.color)" value="#6060e7"/>
+    <Variable name="meta.color" description="Meta Color" type="color" default="#444" value="#444444"/>
+    <Variable name="text.color" description="Text Color" type="color" default="#5b6c77"  value="#5b6c77"/>
+</Group>
+
+<Group description="Site Header" selector="div.headerify-wrap">
+    <Variable name="header.bg" description="Header Background" type="color" default="#171c24" value="#171c24"/>
+    <Variable name="header.color" description="Header Color" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="header.hover.color" description="Header Hover Color" type="color" default="$(main.color)" value="#6060e7"/>
+</Group>
+
+<Group description="Sub Menu" selector="nav.main-menu-wrap">
+    <Variable name="submenu.bg" description="SubMenu Background" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="submenu.color" description="SubMenu Color" type="color" default="$(title.color)" value="#171c24"/>
+    <Variable name="submenu.hover.color" description="SubMenu Hover Color" type="color" default="$(main.color)" value="#6060e7"/>
+</Group>
+
+<Group description="Mega Menu" selector="nav.main-menu-wrap">
+    <Variable name="megamenu.bg" description="MegaMenu Background" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="megamenu.color" description="MegaMenu Color" type="color" default="$(title.color)" value="#171c24"/>
+    <Variable name="megamenu.hover.color" description="MegaMenu Hover Color" type="color" default="$(main.color)" value="#6060e7"/>
+</Group>
+
+<Group description="Mobile Menu">
+    <Variable name="mmenu.bg" description="Mobile Menu Background" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="mmenu.color" description="Mobile Menu Color" type="color" default="$(title.color)" value="#171c24"/>
+    <Variable name="mmenu.hover.color" description="Mobile Menu Hover Color" type="color" default="$(main.color)" value="#6060e7"/>
+</Group>
+
+<Group description="Site Hero" selector="#hero-wrapper">
+    <Variable name="hero.bg" description="Hero Background" type="color" default="$(main.color)" value="#6060e7"/>
+    <Variable name="hero.color" description="Hero Color" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="hero.text.color" description="Hero Text Color" type="color" default="#f0f0fa" value="#f0f0fa"/>
+    <Variable name="hero.search.color" description="Hero Search Color" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="hero.blur" description="Hero Image Blur" type="length" default="2px" min="0px" max="10px" value="2px"/>
+</Group>
+
+<Group description="Post Styles" select="#main-wrapper">
+    <Variable name="post.title.color" description="Post Title Color" type="color" default="$(title.color)" value="#171c24"/>
+    <Variable name="post.title.hover.color" description="Post Title Hover Color" type="color" default="$(title.hover.color)" value="#6060e7"/>
+    <Variable name="post.text.color" description="Post Text Color" type="color" default="$(text.color)" value="#424446"/>
+    <Variable name="itempost.title.size" description="Post Title Font Size" type="length" default="35px" min="20px" max="50px" value="35px"/>
+    <Variable name="itempost.content.size" description="Post Text Font Size" type="length" default="15px" min="12px" max="20px" value="15px"/>
+</Group>
+
+<Group description="Post Options" select="#main-wrapper">
+    <Variable name="breadcrumb" description="Post Breadcrumbs" type="length" default="1px" min="0px" max="1px" value="1px"/>
+    <Variable name="cmm.count" description="Comments Count" type="length" default="1px" min="0px" max="1px" value="1px"/>
+    <Variable name="postnav" description="Post Navigation" type="length" default="1px" min="0px" max="1px" value="1px"/>
+</Group>
+
+<Group description="Theme Widgets">
+    <Variable name="wtitle.color" description="Widget Title Color" type="color" default="$(title.color)" value="#171c24"/>
+</Group>
+
+<Group description="Theme Footer" selector="div.footer-widgets-wrap">
+    <Variable name="footer.bg" description="Footer Background" type="color" default="#1e232b" value="#1e232b"/>
+    <Variable name="footer.color" description="Footer Color" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="footer.hover.color" description="Footer Hover Color" type="color" default="$(main.color)" value="#6060e7"/>
+    <Variable name="footer.post.title.color" description="Footer Post Title Color" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="footer.post.title.hover.color" description="Footer Post Title Hover Color" type="color" default="$(main.color)" value="#6060e7"/>
+    <Variable name="footer.text.color" description="Footer Text Color" type="color" default="#aaaaaa" value="#aaaaaa"/>
+</Group>
+
+<Group description="Footer Bar" selector="div.footerbar">
+    <Variable name="footerbar.bg" description="Footer Bar Background" type="color" default="#171c24" value="#171c24"/>
+    <Variable name="footerbar.color" description="Footer Bar  Color" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="footerbar.hover.color" description="Footer Bar Hover Color" type="color" default="$(main.color)" value="#6060e7"/>
+</Group>
+
+<Group description="Theme Buttons">
+    <Variable name="button.bg" description="Button Background" type="color" default="$(main.color)" value="#6060e7"/>
+    <Variable name="button.color" description="Button Color" type="color" default="#ffffff" value="#ffffff"/>
+    <Variable name="button.hover.bg" description="Button Hover Background" type="color" default="#6161e4" value="#6161e4"/>
+    <Variable name="button.hover.color" description="Button Hover Color" type="color" default="#ffffff" value="#ffffff"/>
+</Group>
+
+<!-- Site Font -->
+<Variable name="mainfont.medium" description="Main Font Medium" hideEditor="true" type="font" default="normal 500 14px $(main.font.family)" value="normal 500 14px $(family)"/>
+<Variable name="mainfont.semibold" description="Main Font SemiBold" hideEditor="true" type="font" default="normal 600 14px $(main.font.family)" value="normal 600 14px $(family)"/>
+<Variable name="mainfont.bold" description="Main Font Bold" hideEditor="true" type="font" default="normal 700 14px $(main.font.family)" value="normal 700 14px $(family)"/>
+<Variable name="mainfont.italic" description="Main Font Italic" hideEditor="true" type="font" default="italic 400 14px $(main.font.family)" value="italic 400 14px $(family)"/>
+<Variable name="mainfont.mediumitalic" description="Main Font Medium Italic" hideEditor="true" type="font" default="italic 500 14px $(main.font.family)" value="italic 500 14px $(family)"/>
+<Variable name="mainfont.semibolditalic" description="Main Font SemiBold Italic" hideEditor="true" type="font" default="italic 600 14px $(main.font.family)" value="italic 600 14px $(family)"/>
+<Variable name="mainfont.bolditalic" description="Main Font Bold Italic" hideEditor="true" type="font" default="italic 700 14px $(main.font.family)" value="italic 700 14px $(family)"/>
+
+<!-- Menu Font -->
+<Variable name="menufont.medium" description="Menu Font Medium" hideEditor="true" type="font" default="normal 500 14px $(menu.font.family)" value="normal 500 14px $(family)"/>
+<Variable name="menufont.semibold" description="Menu Font SemiBold" hideEditor="true" type="font" default="normal 600 14px $(menu.font.family)" value="normal 600 14px $(family)"/>
+<Variable name="menufont.bold" description="Menu Font Bold" hideEditor="true" type="font" default="normal 700 14px $(menu.font.family)" value="normal 700 14px $(family)"/>
+<Variable name="menufont.italic" description="Menu Font Italic" hideEditor="true" type="font" default="italic 400 14px $(menu.font.family)" value="italic 400 14px $(family)"/>
+<Variable name="menufont.mediumitalic" description="Menu Font Medium Italic" hideEditor="true" type="font" default="italic 500 14px $(menu.font.family)" value="italic 500 14px $(family)"/>
+<Variable name="menufont.semibolditalic" description="Menu Font SemiBold Italic" hideEditor="true" type="font" default="italic 600 14px $(menu.font.family)" value="italic 600 14px $(family)"/>
+<Variable name="menufont.bolditalic" description="Menu Font Bold Italic" hideEditor="true" type="font" default="italic 700 14px $(menu.font.family)" value="italic 700 14px $(family)"/>
+
+<!-- Title Font -->
+<Variable name="titlefont.medium" description="Title Font Medium" hideEditor="true" type="font" default="normal 500 14px $(title.font.family)" value="normal 500 14px $(family)"/>
+<Variable name="titlefont.semibold" description="Title Font SemiBold" hideEditor="true" type="font" default="normal 600 14px $(title.font.family)" value="normal 600 14px $(family)"/>
+<Variable name="titlefont.bold" description="Title Font Bold" hideEditor="true" type="font" default="normal 700 14px $(title.font.family)" value="normal 700 14px $(family)"/>
+<Variable name="titlefont.italic" description="Title Font Italic" hideEditor="true" type="font" default="italic 400 14px $(title.font.family)" value="italic 400 14px $(family)"/>
+<Variable name="titlefont.mediumitalic" description="Title Font Medium Italic" hideEditor="true" type="font" default="italic 500 14px $(title.font.family)" value="italic 500 14px $(family)"/>
+<Variable name="titlefont.semibolditalic" description="Title Font SemiBold Italic" hideEditor="true" type="font" default="italic 600 14px $(title.font.family)" value="italic 600 14px $(family)"/>
+<Variable name="titlefont.bolditalic" description="Title Font Bold Italic" hideEditor="true" type="font" default="italic 700 14px $(title.font.family)" value="italic 700 14px $(family)"/>
+
+<!-- Meta Font -->
+<Variable name="metafont.italic" description="Meta Font Italic" hideEditor="true" type="font" default="italic 400 14px $(meta.font.family)" value="italic 400 14px $(family)"/>
+<Variable name="metafont.medium" description="Meta Font Medium" hideEditor="true" type="font" default="normal 500 14px $(meta.font.family)" value="normal 500 14px $(family)"/>
+<Variable name="metafont.mediumitalic" description="Meta Font Medium Italic" hideEditor="true" type="font" default="italic 500 14px $(meta.font.family)" value="italic 500 14px $(family)"/>
+
+<!-- Text Font -->
+<Variable name="textfont.medium" description="Text Font Medium" hideEditor="true" type="font" default="normal 500 14px $(text.font.family)" value="normal 500 14px $(family)"/>
+<Variable name="textfont.semibold" description="Text Font SemiBold" hideEditor="true" type="font" default="normal 600 14px $(text.font.family)" value="normal 600 14px $(family)"/>
+<Variable name="textfont.bold" description="Text Font Bold" hideEditor="true" type="font" default="normal 700 14px $(text.font.family)" value="normal 700 14px $(family)"/>
+<Variable name="textfont.italic" description="Text Font Italic" hideEditor="true" type="font" default="italic 400 14px $(text.font.family)" value="italic 400 14px $(family)"/>
+<Variable name="textfont.mediumitalic" description="Text Font Medium Italic" hideEditor="true" type="font" default="italic 500 14px $(text.font.family)" value="italic 500 14px $(family)"/>
+<Variable name="textfont.semibolditalic" description="Text Font SemiBold Italic" hideEditor="true" type="font" default="italic 600 14px $(text.font.family)" value="italic 600 14px $(family)"/>
+<Variable name="textfont.bolditalic" description="Text Font Bold Italic" hideEditor="true" type="font" default="italic 700 14px $(text.font.family)" value="italic 700 14px $(family)"/>
+*/
+
+/*-- Google Fonts --*/
+@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:local('Raleway Italic'),local(Raleway-Italic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:local('Raleway Italic'),local(Raleway-Italic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:local('Raleway Medium Italic'),local(Raleway-MediumItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwvqJ_DNCb_Vo.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:local('Raleway Medium Italic'),local(Raleway-MediumItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwvqJ_AtCb.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:local('Raleway SemiBold Italic'),local(Raleway-SemiBoldItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwkqV_DNCb_Vo.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:local('Raleway SemiBold Italic'),local(Raleway-SemiBoldItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwkqV_AtCb.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:local('Raleway Bold Italic'),local(Raleway-BoldItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_DNCb_Vo.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:local('Raleway Bold Italic'),local(Raleway-BoldItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_AtCb.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:local(Raleway),local(Raleway-Regular),url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:local(Raleway),local(Raleway-Regular),url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:local('Raleway Medium'),local(Raleway-Medium),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqhPAMif.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:local('Raleway Medium'),local(Raleway-Medium),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqZPAA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:local('Raleway SemiBold'),local(Raleway-SemiBold),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqhPAMif.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:local('Raleway SemiBold'),local(Raleway-SemiBold),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqZPAA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:local('Raleway Bold'),local(Raleway-Bold),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqhPAMif.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:local('Raleway Bold'),local(Raleway-Bold),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
 /*-- CSS Variables --*/
 html{
 --body-font:$(main.font.family);
