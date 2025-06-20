@@ -30,16 +30,15 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 /*!removed ?m=1 */
 var uri = window.location.toString();if (uri.indexOf("?m=1","?m=1") > 0) {var clean_uri = uri.substring(0, uri.indexOf("?m=1"));window.history.replaceState({}, document.title, clean_uri);}
 /*!download box */
-  $('.box .close').on('click', function() {
-  $(this).parent().fadeOut();
-  $(".box").click(function(){
-  $(".headerify").addClass("page-header");        
-  });
-  });
+  // $('.box .close').on('click', function() {
+  // $(this).parent().fadeOut();
+  // $(".box").click(function(){
+  // $(".headerify").addClass("page-header");        
+  // });
+  // });
   if(typeof document.onselectstart!="undefined" ) {document.onselectstart=new Function ("return false" ); } else{document.onmousedown=new
  Function ("return false" );document.onmouseup=new Function ("return false"); } 
 var message="ALERT:- Don't Try To Copy Its Copyrighted Content....!";
-
 ///////////////////////////////////
 function clickIE4(){
 if (event.button==2){
